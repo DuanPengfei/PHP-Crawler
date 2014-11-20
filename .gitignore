@@ -1,2 +1,5 @@
-#ignore the Slime folder
+#ignore the Slim folder
 Slim/
+
+#ignore the gedit's backup copy
+*.*~
