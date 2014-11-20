@@ -1,8 +1,3 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-  </head>
-
 <?
 //-------------------- use Slime --------------------
 require './Slim/Slim.php';
@@ -65,9 +60,9 @@ $app->get('/china-pub/:bookId', function ($bookId) {
     $book['book_info'] = charsetReplace($post->innertext);
   }
 
-  //$response = json_encode($book);
-  //echo $response;
-  print_r($book);
+  $response = json_encode($book);
+  echo $response;
+  //print_r($book);
 });
 
 //-------------------- dangdang --------------------
@@ -144,9 +139,9 @@ $app->get('/dangdang/:bookId', function ($bookId) {
     $book['book_info'] = charsetReplace($post->innertext);
   }
 
-  //$response = json_encode($book);
-  //echo $response;
-  print_r($book);
+  $response = json_encode($book);
+  echo $response;
+  //print_r($book);
 });
 
 function charsetReplace($str) {
